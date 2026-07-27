@@ -72,3 +72,6 @@ Essa solução permite ter um “backend” funcional **sem custo** e sem a nece
 │   └── script.js       # Lógica do formulário
 ├── assets/             # Imagens e ícones
 └── README.md
+
+<img width="1432" height="773" alt="image" src="https://github.com/user-attachments/assets/7b725a41-7dd4-40d1-91c3-9f0672f721b1" />
+
