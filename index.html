@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3° Encontro Mulheres Transformadas</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+    <img src="assets/banner.png" class="banner-img">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h3>3° Encontro</h3>
+        <h1>Mulheres Transformadas</h1>
+        <p>Transformadas por dentro, reconstruídas para viver o propósito.</p>
+        <a href="#inscricao" class="btn">Garantir minha vaga</a>
+    </div>
+</header>
+
+<section class="sobre">
+    <h2>Sobre o evento</h2>
+    <p>Estamos chegando ao nosso 3º Encontro Mulheres Transformadas! 
+    Será um dia especial, preparado com muito carinho para mulheres
+    que desejam viver algo novo com Deus, fortalecer a fé, compartilhar 
+    experiências e receber direcionamento para uma vida transformada.</p>
+</section>
+
+<section class="informacoes">
+    <div class="card">
+        <h3>📅 Data</h3>
+        <p>24/10/2026</p>
+    </div>
+    <div class="card">
+        <h3>⏰ Horário</h3>
+        <p>9:00 às 19:00</p>
+    </div>
+    <div class="card">
+        <h3>💖 Investimento</h3>
+        <p>R$150,00</p>
+    </div>
+</section>
+
+<section class="momentos">
+    <h2>Momentos dos encontros anteriores</h2>
+    <p>Cada encontro foi marcado por experiências, transformação e momentos especiais.</p>
+    
+    <div class="momentos-grid">
+        <!-- Vídeos e fotos mantidos exatamente como estavam -->
+        <div class="momento-card">
+            <div class="momento-info">
+                <span>✨ 1° Encontro Mulheres Transformadas</span>
+                <p>Os primeiros passos de uma jornada de transformação.</p>
+            </div>
+            <video controls poster="./assets/capa1.jpg">
+                <source src="./assets/encontro1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="momento-card">
+            <div class="momento-info">
+                <span>📸 1° Encontro</span>
+                <p>Momentos especiais do nosso primeiro encontro.</p>
+            </div>
+            <img src="./assets/foto1.jpeg">
+        </div>
+
+        <div class="momento-card">
+            <div class="momento-info">
+                <span>📸 1° Encontro</span>
+                <p>Vivendo experiências transformadoras.</p>
+            </div>
+            <img src="./assets/foto2.jpeg">
+        </div>
+
+        <div class="momento-card">
+            <div class="momento-info">
+                <span>📸 1° Encontro</span>
+                <p>Momentos de comunhão e alegria.</p>
+            </div>
+            <img src="./assets/foto3.jpeg">
+        </div>
+
+        <div class="momento-card">
+            <div class="momento-info">
+                <span>📸 1° Encontro</span>
+                <p>Um encontro marcado por propósito.</p>
+            </div>
+            <img src="./assets/foto4.jpeg">
+        </div>
+
+        <div class="momento-card">
+            <div class="momento-info">
+                <span>💖 2° Encontro Mulheres Transformadas</span>
+                <p>Reviva momentos do nosso segundo encontro.</p>
+            </div>
+            <video controls poster="./assets/capa2.jpg">
+                <source src="./assets/encontro2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+
+<section id="inscricao" class="pagamento">
+    <h2>Garanta sua vaga</h2>
+    <p>Escolha sua forma de pagamento: PIX ou cartão.</p>
+
+    <button class="btn pagamento-btn" onclick="abrirModal()">
+        💖 Garantir minha vaga
+    </button>
+
+    <div class="confirmacao">
+        <input type="text" id="nomeParticipante" placeholder="Digite seu nome completo">
+        <button class="btn comprovante-btn" onclick="enviarWhatsapp()">
+            Enviar comprovante
+        </button>
+    </div>
+
+    <p class="contato">📱 Informações: (21) 99475-3223</p>
+</section>
+
+<footer>
+    <p>3° Encontro Mulheres Transformadas • Vivendo a Plenitude de Deus</p>
+</footer>
+
+<!-- Botões flutuantes -->
+<div class="floating-buttons">
+    <a href="https://wa.me/5521994753223" target="_blank" class="whatsapp-btn">💬</a>
+    <a href="https://www.instagram.com/igrejamcvm" target="_blank" class="instagram-btn">📷</a>
+</div>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+
+<!-- Modal -->
+<div id="modalInscricao" class="modal">
+    <div class="modal-content">
+        <span class="fechar" onclick="fecharModal()">×</span>
+        <h2>3° Encontro Mulheres Transformadas</h2>
+        <p>Preencha seus dados para continuar sua inscrição</p>
+        
+        <form id="formInscricao">
+            <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="WhatsApp" required>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade (opcional)">
+            
+            <button type="submit" class="btn">Continuar inscrição</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
